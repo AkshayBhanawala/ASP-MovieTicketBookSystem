@@ -1,5 +1,5 @@
 # [Movie Ticket Book System [ASP]](http://testingth3az.somee.com/Movie)
-An app developed in collage days for trying things out and also as a sem project. \
+An app developed in collage days for trying things out and also as a sem project.
 
 ---
 
