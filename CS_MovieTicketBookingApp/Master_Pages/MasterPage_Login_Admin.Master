@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master_Pages/MasterPage_Main.master" AutoEventWireup="True" CodeBehind="MasterPage_Login_Admin.master.cs" Inherits="CS_MovieTicketBookingApp.Master_Pages.MasterPage_Login_Admin" %>
+
+<asp:Content ID="HEAD_LOGIN_ADMIN_CONTENT" ContentPlaceHolderID="HEAD_MAIN_CONTENTPLACEHOLDER" Runat="Server">
+    <asp:ContentPlaceHolder ID="SUB_HEAD_LOGIN_ADMIN_CONTENTPLACEHOLDER" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="BODY_LOGIN_ADMIN_CONTENT" ContentPlaceHolderID="BODY_MAIN_CONTENTPLACEHOLDER" Runat="Server">
+        <asp:SiteMapDataSource ID="SMDS1" runat="server" SiteMapProvider="Web.LoginAdmin"/>
+        <table width="100%">
+            <tr>
+                <td align="center">
+                    <asp:Menu ID="MAIN_MENU" runat="server" DataSourceID="SMDS1"
+                        DynamicEnableDefaultPopOutImage="False" Orientation="Horizontal" CssClass="menu"
+                        StaticEnableDefaultPopOutImage="False" StaticDisplayLevels="2" DisappearAfter="0">
+                        <StaticMenuItemStyle Cssclass="menu_item" />
+                        <StaticSelectedStyle CssClass="menu_item_selected" />
+                    </asp:Menu>
+                </td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder ID="SUB_BODY_LOGIN_ADMIN_CONTENTPLACEHOLDER" runat="server">
+        </asp:ContentPlaceHolder>
+</asp:Content>

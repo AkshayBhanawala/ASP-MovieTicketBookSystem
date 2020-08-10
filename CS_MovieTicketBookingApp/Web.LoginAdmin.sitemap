@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Users/Admin/HOME_ADMIN.ASPX" title="ADMIN HOME" description="ADMIN HOME">
+    <siteMapNode url="Users/Admin/Management/MOVIE_ADD.ASPX" title="ADD MOVIE" description="ADD MOVIE" />
+    <siteMapNode url="Users/Admin/Management/MOVIE_UPDATE.ASPX" title="UPDATE MOVIE" description="UPDATE MOVIE" />
+    <siteMapNode url="Users/Admin/Management/MOVIE_DELETE.ASPX" title="DELETE MOVIE" description="DELETE MOVIE" />
+    <siteMapNode url="Users/Admin/VIEW_BOOKINGS.ASPX" title="VIEW MY BOOKINGS" description="VIEW MY BOOKINGS" />
+  </siteMapNode>
+</siteMap>

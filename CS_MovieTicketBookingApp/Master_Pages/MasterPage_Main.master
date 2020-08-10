@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" CodeBehind="MasterPage_Main.master.cs" Inherits="CS_MovieTicketBookingApp.Master_Pages.MasterPage_Main" AutoEventWireup="True" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="shortcut icon" href="~/Images/Favicon.ico" type="image/x-icon">
+    <link rel="icon" href="~/Images/Favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" runat="server" href="~/Style/CSS1.css" />
+    <link type="text/css" rel="stylesheet" runat="server" href="~/Style/CSS2.css" />
+    <asp:ContentPlaceHolder id="HEAD_MAIN_CONTENTPLACEHOLDER" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="Body_Main" runat="server">
+    <div class="Body_Background"></div>
+    <div class="Body_Text"></div>
+        <form runat="server">
+            <div class="head_border">
+                <table width="100%">
+                    <tr>
+                        <td align="right" style="padding-right:10px; padding-top:8px;">
+                            <asp:Button ID="BTN_LOGOUT" runat="server" Text="LOGOUT" CausesValidation="False"
+                                EnableViewState="False" UseSubmitBehavior="False" ViewStateMode="Disabled"
+                                Visible="False" CssClass="button_red button_logout" style="height:30px; width:100px;" OnClick="BTN_LOGOUT_Click"/>
+                        </td>
+                        <td align="left" style="padding-left:10%;">
+                            <asp:Label ID="L_TEXT" runat="server" CssClass="head_label" />&nbsp;
+                            <asp:Label ID="L_EMOJI" runat="server" CssClass="head_emoji" />&nbsp;&nbsp;
+                            <asp:Label ID="L_HEAD_USERNAME" runat="server" CssClass="head_username" />
+                            <br><div id="div_user_info" class="div_user_info" role="alert">
+                                <table class="table_user_info">
+                                    <tr>
+                                        <td class="text" style="text-align:left;">FULL NAME:-</td>
+                                        <td style="text-align:left;"><asp:Label ID="L_FULL_NAME" runat="server" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text" style="text-align:left;">USERNAME:-</td>
+                                        <td style="text-align:left;"><asp:Label ID="L_USERNAME" runat="server" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text" style="text-align:left;">EMAIL:-</td>
+                                        <td style="text-align:left;"><asp:Label ID="L_EMAIL" runat="server" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text" style="text-align:left;">AGE:-</td>
+                                        <td style="text-align:left;"><asp:Label ID="L_AGE" runat="server" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text" style="text-align:left;">MOBILE NO:-</td>
+                                        <td style="text-align:left;"><asp:Label ID="L_MOBILE_NO" runat="server" /></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <asp:ContentPlaceHolder id="BODY_MAIN_CONTENTPLACEHOLDER" runat="server">
+            </asp:ContentPlaceHolder>
+        </form>
+    <br />
+    <br />
+    <div class="HideThis">
+
+</body>
+</html>

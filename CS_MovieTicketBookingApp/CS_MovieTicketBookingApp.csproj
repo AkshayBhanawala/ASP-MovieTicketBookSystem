@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EAE6443A-28BD-4347-94A4-E97E08230535}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CS_MovieTicketBookingApp</RootNamespace>
+    <AssemblyName>CS_MovieTicketBookingApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\DB.mdf" />
+    <Content Include="App_Data\DB_log.ldf">
+      <DependentUpon>DB.mdf</DependentUpon>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="Images\bgs\LINKS.source" />
+    <Content Include="Master_Pages\MasterPage_Main.master" />
+    <Content Include="Master_Pages\MasterPage_Login_Admin.Master" />
+    <Content Include="Master_Pages\MasterPage_Login_No.Master" />
+    <Content Include="Master_Pages\MasterPage_Login_User.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web.LoginAdmin.sitemap" />
+    <Content Include="Web.LoginNo.sitemap" />
+    <Content Include="Web.LoginUser.sitemap" />
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BOOK_TICKET.aspx" />
+    <Content Include="ERROR_PAGE.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HOME.aspx" />
+    <Content Include="Images\bgs\bg %281%29.jpg" />
+    <Content Include="Images\bgs\bg %2810%29.jpg" />
+    <Content Include="Images\bgs\bg %2811%29.jpg" />
+    <Content Include="Images\bgs\bg %2812%29.jpg" />
+    <Content Include="Images\bgs\bg %2813%29.jpg" />
+    <Content Include="Images\bgs\bg %2814%29.jpg" />
+    <Content Include="Images\bgs\bg %2815%29.jpg" />
+    <Content Include="Images\bgs\bg %2816%29.jpg" />
+    <Content Include="Images\bgs\bg %2817%29.jpg" />
+    <Content Include="Images\bgs\bg %2818%29.jpg" />
+    <Content Include="Images\bgs\bg %2819%29.jpg" />
+    <Content Include="Images\bgs\bg %282%29.jpg" />
+    <Content Include="Images\bgs\bg %2820%29.jpg" />
+    <Content Include="Images\bgs\bg %2821%29.jpg" />
+    <Content Include="Images\bgs\bg %2822%29.jpg" />
+    <Content Include="Images\bgs\bg %2823%29.jpg" />
+    <Content Include="Images\bgs\bg %2824%29.jpg" />
+    <Content Include="Images\bgs\bg %2825%29.jpg" />
+    <Content Include="Images\bgs\bg %2826%29.jpg" />
+    <Content Include="Images\bgs\bg %2827%29.jpg" />
+    <Content Include="Images\bgs\bg %2828%29.jpg" />
+    <Content Include="Images\bgs\bg %2829%29.jpg" />
+    <Content Include="Images\bgs\bg %283%29.jpg" />
+    <Content Include="Images\bgs\bg %2830%29.jpg" />
+    <Content Include="Images\bgs\bg %2831%29.jpg" />
+    <Content Include="Images\bgs\bg %2832%29.jpg" />
+    <Content Include="Images\bgs\bg %2833%29.jpg" />
+    <Content Include="Images\bgs\bg %2834%29.jpg" />
+    <Content Include="Images\bgs\bg %2835%29.jpg" />
+    <Content Include="Images\bgs\bg %2836%29.jpg" />
+    <Content Include="Images\bgs\bg %2837%29.jpg" />
+    <Content Include="Images\bgs\bg %2838%29.jpg" />
+    <Content Include="Images\bgs\bg %2839%29.jpg" />
+    <Content Include="Images\bgs\bg %284%29.jpg" />
+    <Content Include="Images\bgs\bg %2840%29.jpg" />
+    <Content Include="Images\bgs\bg %2841%29.jpg" />
+    <Content Include="Images\bgs\bg %2842%29.jpg" />
+    <Content Include="Images\bgs\bg %2843%29.jpg" />
+    <Content Include="Images\bgs\bg %2844%29.jpg" />
+    <Content Include="Images\bgs\bg %2845%29.jpg" />
+    <Content Include="Images\bgs\bg %2846%29.jpg" />
+    <Content Include="Images\bgs\bg %2847%29.jpg" />
+    <Content Include="Images\bgs\bg %2848%29.jpg" />
+    <Content Include="Images\bgs\bg %2849%29.jpg" />
+    <Content Include="Images\bgs\bg %285%29.jpg" />
+    <Content Include="Images\bgs\bg %2850%29.jpg" />
+    <Content Include="Images\bgs\bg %2851%29.jpg" />
+    <Content Include="Images\bgs\bg %2852%29.jpg" />
+    <Content Include="Images\bgs\bg %2853%29.jpg" />
+    <Content Include="Images\bgs\bg %2854%29.jpg" />
+    <Content Include="Images\bgs\bg %2855%29.jpg" />
+    <Content Include="Images\bgs\bg %2856%29.jpg" />
+    <Content Include="Images\bgs\bg %2857%29.jpg" />
+    <Content Include="Images\bgs\bg %2858%29.jpg" />
+    <Content Include="Images\bgs\bg %2859%29.jpg" />
+    <Content Include="Images\bgs\bg %286%29.jpg" />
+    <Content Include="Images\bgs\bg %287%29.jpg" />
+    <Content Include="Images\bgs\bg %288%29.jpg" />
+    <Content Include="Images\bgs\bg %289%29.jpg" />
+    <Content Include="Images\Favicon.ico" />
+    <Content Include="Images\Favicon.png" />
+    <Content Include="Scripts\jq.js" />
+    <Content Include="Style\CSS1 - Copy.css" />
+    <Content Include="Style\CSS1.css" />
+    <Content Include="Style\CSS2.css" />
+    <Content Include="Users\Admin\BOOK_TICKET.aspx" />
+    <Content Include="Users\Admin\HOME_ADMIN.aspx" />
+    <Content Include="Users\Admin\Management\MOVIE_ADD.aspx" />
+    <Content Include="Users\Admin\Management\MOVIE_DELETE.aspx" />
+    <Content Include="Users\Admin\Management\MOVIE_UPDATE.aspx" />
+    <Content Include="Users\Admin\VIEW_BOOKINGS.aspx" />
+    <Content Include="Users\LOGIN.aspx" />
+    <Content Include="Users\REGISTRATION_USER.aspx" />
+    <Content Include="Users\User\BOOK_TICKET.aspx" />
+    <Content Include="Users\User\HOME_USER.aspx" />
+    <Content Include="Users\User\VIEW_BOOKINGS.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ERROR_PAGE.aspx.cs">
+      <DependentUpon>ERROR_PAGE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ERROR_PAGE.aspx.designer.cs">
+      <DependentUpon>ERROR_PAGE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HOME.aspx.cs">
+      <DependentUpon>HOME.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME.aspx.designer.cs">
+      <DependentUpon>HOME.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Pages\MasterPage_Login_Admin.Master.cs">
+      <DependentUpon>MasterPage_Login_Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_Pages\MasterPage_Login_Admin.Master.designer.cs">
+      <DependentUpon>MasterPage_Login_Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Pages\MasterPage_Login_No.Master.cs">
+      <DependentUpon>MasterPage_Login_No.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_Pages\MasterPage_Login_No.Master.designer.cs">
+      <DependentUpon>MasterPage_Login_No.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Pages\MasterPage_Login_User.Master.cs">
+      <DependentUpon>MasterPage_Login_User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_Pages\MasterPage_Login_User.Master.designer.cs">
+      <DependentUpon>MasterPage_Login_User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Pages\MasterPage_Main.master.cs">
+      <DependentUpon>MasterPage_Main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_Pages\MasterPage_Main.master.designer.cs">
+      <DependentUpon>MasterPage_Main.master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users\Admin\Management\MOVIE_ADD.aspx.cs">
+      <DependentUpon>MOVIE_ADD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\Admin\Management\MOVIE_ADD.aspx.designer.cs">
+      <DependentUpon>MOVIE_ADD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Admin\Management\MOVIE_DELETE.aspx.cs">
+      <DependentUpon>MOVIE_DELETE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\Admin\Management\MOVIE_DELETE.aspx.designer.cs">
+      <DependentUpon>MOVIE_DELETE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Admin\Management\MOVIE_UPDATE.aspx.cs">
+      <DependentUpon>MOVIE_UPDATE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\Admin\Management\MOVIE_UPDATE.aspx.designer.cs">
+      <DependentUpon>MOVIE_UPDATE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\BOOK_TICKET.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\BOOK_TICKET.aspx.designer.cs">
+      <DependentUpon>BOOK_TICKET.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\LOGIN.aspx.cs">
+      <DependentUpon>LOGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\LOGIN.aspx.designer.cs">
+      <DependentUpon>LOGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\REGISTRATION_USER.aspx.cs">
+      <DependentUpon>REGISTRATION_USER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\REGISTRATION_USER.aspx.designer.cs">
+      <DependentUpon>REGISTRATION_USER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\VIEW_BOOKINGS.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\VIEW_BOOKINGS.aspx.designer.cs">
+      <DependentUpon>VIEW_BOOKINGS.aspx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7100</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:7100/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

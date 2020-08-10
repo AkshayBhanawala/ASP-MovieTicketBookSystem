@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Users/User/HOME_USER.ASPX" title="USER HOME" description="USER HOME">
+    <siteMapNode url="Users/User/VIEW_BOOKINGS.ASPX" title="VIEW MY BOOKINGS" description="VIEW MY BOOKINGS" />
+  </siteMapNode>
+</siteMap>

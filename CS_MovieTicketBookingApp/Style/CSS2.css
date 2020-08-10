@@ -1,0 +1,25 @@
+.Body_Background {
+	background: url('https://i.imgur.com/39kPVfq.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: scale(1.08);
+	filter: blur(5px);
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	margin-top: -2VH;
+	left: 0;
+	right: 0;
+	overflow-y: auto;
+	z-index: -2;}
+
+.Body_Text::before {
+	position: fixed;
+	content:'Designed BY TH3-AZ';
+	right: 1%;
+	bottom: 0;
+	font-size: 100%;
+	mix-blend-mode: difference;}
