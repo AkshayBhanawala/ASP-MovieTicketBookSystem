@@ -26,7 +26,7 @@ http://testingth3az.somee.com/Movie
 |Login Type|Username|Password|
 |---|---|---|
 |Admin: |**Admin**|**admin@123** |
-|User: |**JUser**|**user@123**|
+|User: |**User**|**user@123**|
 
 **Or those details which you used for registration**
 
