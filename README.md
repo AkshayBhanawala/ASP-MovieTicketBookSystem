@@ -23,8 +23,10 @@ http://testingth3az.somee.com/Movie
 ---
 
 ### Logins available by default
-**Admin:admin@123** \
-**User:user@123**
+|Login Type|Username|Password|
+|---|---|---|
+|Admin: |**Admin**|**admin@123** |
+|User: |**JUser**|**user@123**|
 
 **Or those details which you used for registration**
 
